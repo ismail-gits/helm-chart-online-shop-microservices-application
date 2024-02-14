@@ -1,4 +1,4 @@
-helm uninstall emailservice
+helm uninstall adservice
 helm uninstall cartservice
 helm uninstall checkoutservice
 helm uninstall currencyservice 
