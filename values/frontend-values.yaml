@@ -22,4 +22,4 @@ containerEnvVars:
     value: "recommendationservice:8080"
 
 servicePort: 80
-serviceType: NodePort
+serviceType: LoadBalancer
