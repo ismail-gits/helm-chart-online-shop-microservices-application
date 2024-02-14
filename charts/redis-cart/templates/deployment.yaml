@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.appName }}
+  labels:
+    app: {{ .Values.appName }}
+spec:
+  replicas: {{ .Values.appReplicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName }} 
+    spec:
+      containers: 
+        - name: {{ .Values.appName }} 
+          image: "{{ .Values.appImage }}:{{ .Values.appVersion }}"
+          ports:
+            - containerPort: {{ .Values.containerPort }}
+          volumeMounts:
+            - name: {{ .Values.volumeName }}
+              mountPath: {{ .Values.volumePath }}
+          env:
+              - name: DISABLE_PROFILER
+                value: "1"
+              - name: DISABLE_TRACKING
+                value: "1"
+      volumes:
+        - name: {{ .Values.volumeName }}
+          emptyDir: {}
