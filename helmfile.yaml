@@ -40,7 +40,7 @@ releases:
       - values/productcatalogservice-values.yaml
 
   - name: recommendationservice
-    chart:  chart microservices
+    chart:  charts/microservices
     values:
       - values/recommendationservice-values.yaml
 
