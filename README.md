@@ -47,6 +47,9 @@ Follow these steps to deploy the online shop application using this Helm chart:
 
 This will remove all deployed microservices associated with the online shop application from your Kubernetes cluster.
 
+## Deployment Environment
+This application was deployed using Linode Kubernetes Engine (LKE).
+
 ## Configuration
 Each microservice can be configured using its respective values file located in the values directory. These files contain parameters such as service name, image, version, replicas, ports, environment variables, and more, allowing for fine-grained customization.
 
