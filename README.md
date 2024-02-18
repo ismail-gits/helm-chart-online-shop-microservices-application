@@ -1,4 +1,4 @@
-# Helm Chart Online Shop Microservices Application
+# Helm Chart For Online Shop Microservices Application
 
 This Helm chart provides a comprehensive solution for deploying an online shop application on Kubernetes. It encapsulates various microservices necessary for the functioning of the application and ensures scalability, reliability, and ease of management.
 
