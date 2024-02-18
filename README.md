@@ -39,6 +39,14 @@ Follow these steps to deploy the online shop application using this Helm chart:
 
 4. **Monitoring and Management**: Utilize Kubernetes tools for monitoring and managing the deployed microservices, ensuring optimal performance and reliability.
 
+5. **Uninstall Microservices**: To uninstall the online shop application manually, run the uninstallation script uninstall.sh:
+
+    ```bash
+    ./uninstall.sh
+    ```
+
+This will remove all deployed microservices associated with the online shop application from your Kubernetes cluster.
+
 ## Configuration
 Each microservice can be configured using its respective values file located in the values directory. These files contain parameters such as service name, image, version, replicas, ports, environment variables, and more, allowing for fine-grained customization.
 
@@ -56,15 +64,6 @@ The helmfile.sh script simplifies the management of Helm releases by providing a
     ```bash
     ./helmfile.sh delete
     ```
-    
-## Uninstallation
-To uninstall the online shop application manually, run the uninstallation script uninstall.sh:
-
-    ```bash
-    ./uninstall.sh
-    ```
-
-This will remove all deployed microservices associated with the online shop application from your Kubernetes cluster.
 
 ## Acknowledgements
 I would like to extend my gratitude to Google Container Registry (gcr) for hosting the publicly available Docker images used in this project. This Helm chart was inspired by the need for a robust and scalable solution for deploying online shop applications on Kubernetes.
