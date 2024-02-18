@@ -69,4 +69,4 @@ The helmfile.sh script simplifies the management of Helm releases by providing a
     ```
 
 ## Acknowledgements
-I would like to extend my gratitude to Google Container Registry (gcr) for hosting the publicly available Docker images used in this project. This Helm chart was inspired by the need for a robust and scalable solution for deploying online shop applications on Kubernetes.
+I would like to extend my gratitude to Google Cloud for hosting the publicly available Docker images used in this project. This Helm chart was inspired by the need for a robust and scalable solution for deploying online shop applications on Kubernetes.
