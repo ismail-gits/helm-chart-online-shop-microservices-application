@@ -26,7 +26,7 @@ Follow these steps to deploy the online shop application using this Helm chart:
 1. **Clone the Repository**: Clone this repository to your local machine.
 
    ```bash
-   git clone https://gitlab.com/ismailGitlab/helm-chart-online-shop-microservices-application.git
+   git clone https://github.com/ismail-gits/helm-chart-online-shop-microservices-application.git
    ```
 
 2. **Deploy Microservices**: Run the installation script install.sh to deploy each microservice:
